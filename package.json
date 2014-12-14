@@ -1,0 +1,27 @@
+{
+  "name": "ddp-server",
+  "version": "0.5.0",
+  "description": "A ddp server for nodejs",
+  "main": "lib.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/Tarang/ddp-server"
+  },
+  "keywords": [
+    "ddp",
+    "server"
+  ],
+  "author": "Tarang Patel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tarang/ddp-server/issues"
+  },
+  "homepage": "https://github.com/Tarang/DDP-Server",
+  "dependencies": {
+    "faye-websocket": "^0.9.0",
+    "underscore": "^1.7.0"
+  }
+}
