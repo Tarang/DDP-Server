@@ -107,4 +107,4 @@ var DDPServer = function(opts) {
 
 }
 
-exports = DDPServer
+module.exports = DDPServer

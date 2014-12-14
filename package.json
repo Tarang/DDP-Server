@@ -1,6 +1,6 @@
 {
   "name": "ddp-server",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A ddp server for nodejs",
   "main": "lib.js",
   "scripts": {
