@@ -6,15 +6,16 @@ Usage
 
 ```
 var DDPServer = require("ddp-server");
+var server = new DDPServer({});
 
-DDPServer.methods({
+server.methods({
     test: function() {
         return true;
     }
 });
 
 
-DDPServer.listen(4000);
+server.listen(4000);
 ```
 
 You can then connect to it using a ddp client such as `ddp`
