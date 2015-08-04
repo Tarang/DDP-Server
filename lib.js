@@ -3,7 +3,7 @@ var DDPServer = function(opts) {
     var WebSocket = require('faye-websocket'),
         http = require('http'),
         _ = require('underscore'),
-        server = http.createServer(),
+        server = opts.server || http.createServer(),
         methods = {},
         self = this;
 
@@ -89,6 +89,11 @@ var DDPServer = function(opts) {
     });
 
     this.listen = function(port) {
+        // assumed that .listen() should be called outside, if server is passed in options
+        if (opts.server) {
+            return;
+        }
+
         server.listen(port);
     };
 
