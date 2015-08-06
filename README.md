@@ -2,20 +2,34 @@
 
 DDP-Server is a nodejs based DDP Server.
 
-Usage
+Usage,
 
-```
-var DDPServer = require("ddp-server");
-var server = new DDPServer({});
+```js
+var DDPServer = require('ddp-server');
+var ddp = new DDPServer({});
 
-server.methods({
+ddp.methods({
     test: function() {
         return true;
     }
 });
 
 
-server.listen(4000);
+ddp.listen(4000);
 ```
 
-You can then connect to it using a ddp client such as `ddp`
+Optionally, server could be passed as parameter,
+
+```js
+var http = require('http');
+var DDPServer = require('ddp-server');
+
+var server = http.createServer();
+var ddp = new DDPServer({server: server});
+
+// define methods...
+
+server.listen(400);
+```
+
+You can then connect to it using a ddp client such as `ddp`.
