@@ -64,7 +64,7 @@ var DDPServer = function(opts) {
                                     id: data.id,
                                     error: {
                                         error: 404,
-                                        reason: "Methd not found",
+                                        reason: "Method not found",
                                         errorType: "Meteor.Error"
                                     }
                                 });
